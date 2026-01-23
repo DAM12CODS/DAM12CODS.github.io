@@ -28,11 +28,10 @@
      </header>
 
 
-    
+
     <main>
         <section id="introduccion" class="introduccion contenedor">
             <h2>Introduccion</h2>
-            
             <P>Las reglas de inferencia son principios lógicos que permiten derivar conclusiones válidas a partir de un conjunto de premisas(proposiciones). Una premisa es una proposición que se asume como 
                 verdadera desde el inicio de un razonamiento lógico. A partir de estas premisas se aplican reglas formales con el fin de
                 obtener una nueva proposición, denominada conclusión, que es la que se desea demostrar. Este proceso se conoce como una derivación lógica a partir de premisas.</P>
@@ -45,6 +44,10 @@
                 son verdaderas, entonces la conclusión también debe serlo. Por esta razón, se dice que un argumento es válido por su forma lógica y no por el contenido de sus proposiciones.</p>
         </section>
 
+        <section id="reglas" class="contenedor">
+            <h2>Reglas de inferencia y Tabla guia</h2>
+            <p>CONTENIDO DE REGLAS</p>
+        </section>
         <section id="reglas" class="contenedor">
             <h2>Reglas de inferencia y Tabla guia</h2>
             <img 
@@ -108,18 +111,18 @@
             >
             <p>Silogismo Hipotético</p>
             <p>La regla de inferencia Silogismo Hipotético o también conocida como la regla de la transitividad, menciona que al tener dos proposiciones compuestas p->q y q ->r, entonces se concluye p->r (∴p->r). 
-Esta regla se fundamenta en el carácter transitivo de la implicación lógica: si la verdad de p garantiza la verdad de q, y la verdad de q garantiza la verdad de r, entonces la verdad de p garantiza necesariamente la verdad de r.
-A manera de ejemplo, si el objetivo es ir desde el punto A hasta el punto B, y el único camino posible es atravesar una secuencia de puntos intermedios A→1→2→3→B, entonces, dado que cada tramo mantiene una relación de dependencia, se puede concluir que existe una relación directa entre A y B.
-</p>
+                Esta regla se fundamenta en el carácter transitivo de la implicación lógica: si la verdad de p garantiza la verdad de q, y la verdad de q garantiza la verdad de r, entonces la verdad de p garantiza necesariamente la verdad de r.
+                A manera de ejemplo, si el objetivo es ir desde el punto A hasta el punto B, y el único camino posible es atravesar una secuencia de puntos intermedios A→1→2→3→B, entonces, dado que cada tramo mantiene una relación de dependencia, se puede concluir que existe una relación directa entre A y B.
+            </p>
              <img 
               src="8.png" 
               class="imagen-tabla"
             >
             <p>Silogismo Disyuntivo</p>
             <p>El Silogismo Disyuntivo es una regla de inferencia que, para muchos estudiantes, resulta una de las más complejas. Su estructura se compone de las premisas p ∨ q y ¬p, a partir de las cuales se concluye q (∴ q).
-Esta conclusión se justifica porque, al ser verdadera la proposición ¬p, se establece que p es falsa. Dado que la disyunción p ∨ q es verdadera y una disyunción solo es falsa cuando ambos componentes son falsos, es necesario que q sea verdadera para que la proposición disyuntiva se mantenga verdadera.
-Por lo tanto, esta regla se fundamenta en el principio lógico de la disyunción, según el cual basta con que una de las proposiciones sea verdadera para que toda la disyunción lo sea.
-</p>
+            Esta conclusión se justifica porque, al ser verdadera la proposición ¬p, se establece que p es falsa. Dado que la disyunción p ∨ q es verdadera y una disyunción solo es falsa cuando ambos componentes son falsos, es necesario que q sea verdadera para que la proposición disyuntiva se mantenga verdadera.
+            Por lo tanto, esta regla se fundamenta en el principio lógico de la disyunción, según el cual basta con que una de las proposiciones sea verdadera para que toda la disyunción lo sea.
+            </p>
              <img 
               src="9.png" 
               class="imagen-tabla"
@@ -129,12 +132,78 @@ Por lo tanto, esta regla se fundamenta en el principio lógico de la disyunción
 
         <section id="ejemplos" class="contenedor">
             <h2>Ejemplos</h2>
-            <p>CONTENIDO DE LOS EJEMPLOS</p>
+            <p class="intro-ejemplos">Despliega cada regla para ver el ejemplo aplicado.</p>
+            <div class="ejemplos-grid">
+                <details class="ejemplo-card" open>
+                    <summary>Modus Tollens</summary>
+                    <ul class="ejemplo-lista">
+                        <li>p &rarr; q: Si Zeus es humano, entonces Zeus es mortal.</li>
+                        <li>&not; q: Zeus es inmortal.</li>
+                        <li>&therefore; &not; p: Zeus no es humano.</li>
+                    </ul>
+                    <p class="ejemplo-nota">Si de p se deduce q, pero se niega q, entonces se niega p.</p>
+                </div>
+
+                <details class="ejemplo-card">
+                    <summary>Introducción de la Disyunción (Generalización o Suma)</summary>
+                    <ul class="ejemplo-lista">
+                        <li>p: Zeus es inmortal.</li>
+                        <li>q: Zeus es humano (proposición cualquiera).</li>
+                        <li>p &vee; q: Zeus es inmortal o Zeus es humano.</li>
+                    </ul>
+                    <p class="ejemplo-nota">La regla permite agregar cualquier proposición por disyunción a una afirmación verdadera.</p>
+                </details>
+                <details class="ejemplo-card">
+                    <summary>Modus Ponens</summary>
+                    <ul class="ejemplo-lista">
+                        <li>p → q: Si hoy es martes, entonces Juan se irá a trabajar.</li>
+                        <li>p: Hoy es martes.</li>
+                        <li>p ∴ q: Juan irá a trabajar.</li>
+                    </ul>
+                    <p class="ejemplo-nota">"El modo que, al afirmar, afirma“.</p>
+                </details>
+                <details class="ejemplo-card">
+                    <summary>Silogismo Hipotético</summary>
+                    <ul class="ejemplo-lista">
+                        <li>p → q: Si estudio, entonces aprobaré el examen.</li>
+                        <li>q → r: Si apruebo el examen, entonces pasaré el curso.</li>
+                        <li>p ∴ r: Si estudio, entonces pasaré el curso.</li>
+                    </ul>
+                    <p class="ejemplo-nota">Permite derivar una conclusión a partir de dos condicionales encadenados.</p>
+                </details>
+                <details class="ejemplo-card">
+                    <summary>Silogismo Disyuntivo</summary>
+                    <ul class="ejemplo-lista">
+                        <li>p ∨ q: O llueve o hace sol.</li>
+                        <li>¬p: No está lloviendo.</li>
+                        <li>∴ q: Entonces, está haciendo sol.</li>
+                    </ul>
+                    <p class="ejemplo-nota">Si se tiene una disyunción y se niega una de las opciones, se puede concluir que la otra opción es verdadera.</p>
+                </details>
+                <details class="ejemplo-card">
+                    <summary>Conjunción</summary>
+                    <ul class="ejemplo-lista">
+                        <li>p: María es estudiante.</li>
+                        <li>q: María trabaja medio tiempo.</li>
+                        <li>p ∧ q: María es estudiante y trabaja medio tiempo.</li>
+                    </ul>
+                    <p class="ejemplo-nota">Permite combinar dos proposiciones verdaderas en una sola afirmación conjunta.</p>
+            </details>
+            <details class="ejemplo-card">
+                <summary>Adición</summary>
+                <ul class="ejemplo-lista">
+                    <li>p: El cielo es azul.</li>
+                    <li>q: La hierba es verde (proposición cualquiera).</li>
+                    <li>p ∨ q: El cielo es azul o la hierba es verde.</li>
+                </ul>
+                <p class="ejemplo-nota">Permite agregar cualquier proposición por disyunción a una afirmación verdadera.</p>
+            </details>
+
         </section>
 
         <section id="ejercicio" class="contenedor">
             <h2>Ejercicio interactivo</h2>
-            <p>CONTENUDO DE LOS EJERICIOS COMO ORACIONES Y UN EJERICIO DEL CODIGO EN MATLAB</p>
+            <p>CONTENIDO DE LOS EJERICIOS COMO ORACIONES Y UN EJERICIO DEL CODIGO EN MATLAB</p>
             <P>Te mostramos el codigo ejecutable. Utilizamos la plataforma de Matlab para presentarte el siguiente codigo que fue utilizado para la representacion de tablas de inferencia y su respectivo analisis
             </P>
         </section>
@@ -151,7 +220,7 @@ Por lo tanto, esta regla se fundamenta en el principio lógico de la disyunción
                 allowfullscreen>
                 </iframe>
             </div>
-            
+
             <p>LINK DEL VIDEO CON UN ICONO DE YOUTUBE O COLOCAR EL VIDEO DIRECTO EN LA PAGINA</p>
         </section>
     </main>
@@ -165,35 +234,14 @@ Por lo tanto, esta regla se fundamenta en el principio lógico de la disyunción
             </div>
             <div class="asistencia-virtual">
                 <a href="./" class="icono-asistencia">
-                    <i class='bx  bx-help-circle'></i>  
+                    <i class='bx  bx-help-circle'></i>
                 </a>
             </div>
         </div>
     </footer>
-    
+
 
     <script src="js/categories.js"></script>
     <!--<script src="js/lightbox.js"><srcipt>-->
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
