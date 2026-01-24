@@ -34,7 +34,7 @@ body,html{
   background-image: url('imagenes/diseno-fondo-tecnologia-lineas-circuitos-rojos-digitales_1017-27263.avif');
  background-size: cover;
   background-position: center;
-  color: black;
+  color: white;
   position: relative;
 }
 
@@ -490,4 +490,5 @@ body,html{
     padding: 20px;
   }
 }
+
 
