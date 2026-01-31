@@ -62,12 +62,12 @@
 
             <div class="tamaño-tablas">
             <img
-              src="Imagenes/1.png"
+              src="imagenes/1.png"
               alt="Tabla de reglas de inferencia lógica 1"
               class="imagen-tabla"
             >
             <img
-               src = "Imagenes/2.png"
+               src = "imagenes/2.png"
               alt="Tabla de reglas de inferencia lógica 2"
               class="imagen-tabla"
             >
@@ -84,7 +84,7 @@
                 verdad de la implicación. Otro caso puede ser que (p->q) y (–q) como premisas el resultante o conclusión será –p, esto sucede nuevamente por la propiedad de la implicación.</p>
                 </div>
               <img
-              src="Imagenes/3.png"          
+              src="imagenes/3.png"          
             >
             </div>
             </div>
@@ -101,7 +101,7 @@
                 Esta conclusión puede verificarse mediante la tabla de verdad de la implicación, considerando los valores de verdad negados y no negados de las proposiciones involucradas.</p>
                 </div>
             <img
-              src="Imagenes/4.png"
+              src="imagenes/4.png"
               
             >
             </div>
@@ -117,7 +117,7 @@
               En algunos contextos informales, esta regla se describe como “p o cualquier otra proposición”, aunque formalmente se expresa como la introducción de una disyunción a partir de una premisa verdadera. </p>
               </div>
             <img
-              src="Imagenes/5.png"             
+              src="imagenes/5.png"             
             >
             </div>
             </div>
@@ -136,7 +136,7 @@
             </p>
             </div>
              <img
-              src="Imagenes/6.png"              
+              src="imagenes/6.png"              
             >
             </div>
             </div>
@@ -153,7 +153,7 @@
                 </p>
                 </div>
              <img
-              src="Imagenes/7.png"              
+              src="imagenes/7.png"              
             >
             </div>
             </div>
@@ -169,7 +169,7 @@
             </p>
             </div>
              <img
-              src="Imagenes/8.png"              
+              src="imagenes/8.png"              
             >
             </div>
             </div>
@@ -185,7 +185,7 @@
             </p>
             </div>
              <img
-              src="Imagenes/9.png"             
+              src="imagenes/9.png"             
             >
             </div>
             </div>
@@ -194,7 +194,7 @@
 
         <section id="ejemplos" class="contenedor">
             <div class="card">
-            <h2>Ejemplos</h2>            
+            <h2>Ejemplos y Matlab</h2>            
             <p>Despliega cada regla para ver el ejemplo aplicado.</p>
             </div>
 
@@ -267,6 +267,89 @@
         </section>
 
 
+          <!--PARA MATLAB-->
+   <section class="codigo-matlab">
+    <div class="matlab-header">
+        <span class="matlab-dot red"></span>
+        <span class="matlab-dot yellow"></span>
+        <span class="matlab-dot green"></span>
+        <span class="matlab-title">Editor MATLAB</span>
+    </div>
+
+    <pre class="matlab-code">    
+         <span class="comentario">% Regla de inferencia: Modus Ponens</span>
+         <span class="comentario">% Definimos las proposiciones</span>
+         <span class="comentario">% p: Esta lloviendo</span>
+         <span class="comentario">% q: La calle esta mojada</span>
+          p = true;  
+          q = false; 
+         <span class="keyword">if</span> p == true
+          q = true;
+         <span class="keyword">end</span>
+         <span class="comentario">% Mostrar resultado</span>
+         disp('MODUS PONENS:')
+         disp(['Esta lloviendo = ', num2str(p)])
+         disp(['La calle esta mojada = ', num2str(q)])
+         disp('Esta lloviendo, entonces la calle esta mojada')
+    </pre>
+    <p class="nota">📌 Código desarrollado en MATLAB (visualización educativa).</p>
+
+       <div class="matlab-header">
+        <span class="matlab-dot red"></span>
+        <span class="matlab-dot yellow"></span>
+        <span class="matlab-dot green"></span>
+        <span class="matlab-title">Editor MATLAB</span>
+       </div>
+
+        <pre class="matlab-code">
+        <span class="comentario">% Regla de inferencia: Modus Tollens</span>
+        <span class="comentario">% p: Está lloviendo</span>
+        <span class="comentario">% q: La calle está mojada</span>
+
+        p = true;
+        q = false;
+
+        <span class="keyword">if</span> q == false
+        p = false;
+        <span class="keyword">end</span>
+
+        <span class="comentario">% Mostrar resultado</span>
+    disp('MODUS TOLLENS:')
+    disp(['Esta lloviendo = ', num2str(p)])
+    disp(['La calle esta mojada = ', num2str(q)])
+    disp('La calle no esta mojada, entonces no esta lloviendo')
+    </pre>
+<p class="nota">📌 Código desarrollado en MATLAB (visualización educativa).</p>
+
+
+
+       <div class="matlab-header">
+        <span class="matlab-dot red"></span>
+        <span class="matlab-dot yellow"></span>
+        <span class="matlab-dot green"></span>
+        <span class="matlab-title">Editor MATLAB</span>
+    </div>
+
+    <pre class="matlab-code">
+    <span class="comentario">% Regla de inferencia: Suma (Adición)</span>
+    <span class="comentario">% p: Está lloviendo</span>
+    <span class="comentario">% q: Hace frio</span>
+
+    p = true;
+    q = false;
+
+    resultado = p || q;
+
+    <span class="comentario">% Mostrar resultado</span>
+        disp('SUMA (ADICION):')
+        disp(['Esta lloviendo = ', num2str(p)])
+        disp(['Hace frio = ', num2str(q)])
+        disp(['p OR q = ', num2str(resultado)])
+        disp('Esta lloviendo, entonces esta lloviendo o hace frio')
+    </pre>
+
+    <p class="nota">📌 Código desarrollado en MATLAB (visualización educativa).</p>
+    </section>
 
 
 
@@ -948,7 +1031,9 @@
       </a>
     </div>
   </div>
-  
+   
+
+  <!--SECCION DE LOS COMENTARIOS-->  
   <div class="footer-comentarios" id="comentarios">
   <h3>Déjanos tu pregunta</h3>
 
